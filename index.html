@@ -1,0 +1,560 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#ff416c"><title>Compare_X Rank</title><style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f5f6fa;color:#1f2430;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.app-shell{max-width:520px;margin:0 auto;min-height:100vh;background:#f5f6fa;padding-bottom:86px}.topbar{height:66px;padding:10px 18px;display:flex;align-items:center;justify-content:space-between;background:#fff;position:sticky;top:0;z-index:20;border-bottom:1px solid #ececf2}.brand{display:flex;align-items:center;gap:10px}.brand .logo,.brand-mark,.profile-avatar{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,#ff416c,#ff7a4d);color:#fff;display:grid;place-items:center;font-weight:900;box-shadow:0 7px 18px rgba(255,65,108,.25)}.brand strong{display:block;font-size:16px;letter-spacing:.2px}.brand small{display:block;color:#9b9eaa;font-size:9px;letter-spacing:2px;font-weight:800}.music-pill{border:0;background:#fff3f6;color:#ef4268;border-radius:20px;padding:9px 13px;font-weight:800;font-size:11px}.page{display:none;padding:14px}.active-page{display:block}.hero-card{margin-top:4px;border-radius:22px;padding:22px;color:#fff;background:linear-gradient(135deg,#ff416c 0%,#ff6a4d 100%);display:flex;justify-content:space-between;gap:12px;box-shadow:0 14px 30px rgba(255,65,108,.2)}.eyebrow,.section-kicker{font-size:10px;letter-spacing:1.7px;font-weight:900;color:#a3a5b0}.hero-card .eyebrow{color:rgba(255,255,255,.75)}h1{margin:4px 0;font-size:24px;line-height:1.15}h2{margin:3px 0;font-size:18px}.hero-card p{margin:8px 0 0;color:rgba(255,255,255,.86);font-size:12px}.hero-badge{align-self:flex-start;background:rgba(255,255,255,.2);padding:7px 9px;border-radius:20px;font-size:10px;font-weight:900}.wallet-card{background:#202533;color:#fff;border-radius:20px;padding:18px;margin-top:12px;box-shadow:0 12px 28px rgba(32,37,51,.15)}.wallet-card.large{padding:24px}.wallet-top{display:flex;justify-content:space-between;color:#aeb2c0;font-size:10px}.balance{font-size:31px;font-weight:900;margin:7px 0}.user-mini{display:flex;justify-content:space-between;color:#c3c6d0;font-size:11px;padding-bottom:13px}.wallet-actions{display:flex;gap:9px}.wallet-btn{flex:1;border:0;border-radius:12px;padding:11px 8px;font-weight:900;font-size:11px}.wallet-btn.add{background:#ff416c;color:#fff}.wallet-btn.withdraw{background:#303646;color:#fff}.section-head{display:flex;align-items:end;justify-content:space-between;margin:18px 2px 10px}.section-head h2{font-size:19px}.timer-chip{min-width:58px;text-align:center;background:#fff;border:1px solid #ececf2;color:#ff416c;padding:8px 10px;border-radius:12px;font-weight:900}.game-card,.result-card,.empty-card,.profile-card,.info-list{background:#fff;border-radius:20px;padding:17px;box-shadow:0 8px 24px rgba(30,33,45,.06);margin-bottom:12px}.round-title{display:flex;justify-content:space-between;font-size:11px;font-weight:900;color:#555a68;margin-bottom:15px}.live-dot{color:#ff416c}.choice-label{font-size:12px;font-weight:900;margin:13px 0 9px}.choice-label span{float:right;color:#a0a3ae;font-size:10px}.color-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.color-choice{border:0;color:#fff;padding:12px 5px;border-radius:12px;font-weight:900}.green{background:#28c76f}.red{background:#ff416c}.violet{background:#8e5cf6}.number-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:7px}.num-btn{border:1px solid #ececf2;background:#fff;padding:11px 0;border-radius:11px;font-weight:900;color:#343847}.num-btn.n0,.num-btn.n2,.num-btn.n4,.num-btn.n6,.num-btn.n8{color:#ff416c;border-color:#ffd0da;background:#fff7f9}.num-btn.n1,.num-btn.n3,.num-btn.n5,.num-btn.n7,.num-btn.n9{color:#28c76f;border-color:#c9f2dc;background:#f5fff9}.num-btn.n0{background:linear-gradient(135deg,#fff7f9 0%,#f6efff 100%);color:#8e5cf6;border-color:#dccfff}.num-btn.n5{background:linear-gradient(135deg,#f5fff9 0%,#f6efff 100%);color:#8e5cf6;border-color:#dccfff}.winning-number{font-weight:900;padding:5px 10px;border-radius:20px;background:#f3f4f7}.winning-number.red-number{color:#ff416c;background:#fff0f3}.winning-number.green-number{color:#28c76f;background:#edfff5}.winning-number.violet-number{color:#8e5cf6;background:#f3edff}.num-btn:active,.color-choice:active{transform:scale(.97)}.input-group{margin-top:12px}.input-group label{display:block;font-size:10px;font-weight:900;color:#777b88;margin-bottom:6px}.input-group input{width:100%;border:1px solid #e5e6ec;background:#fafbfc;border-radius:11px;padding:12px;outline:none;font-size:13px;color:#222}.input-group input:focus{border-color:#ff6a86}.primary-btn,.secondary-btn{border:0;border-radius:12px;padding:13px;font-weight:900;font-size:11px;cursor:pointer}.primary-btn{background:linear-gradient(135deg,#ff416c,#ff704d);color:#fff;box-shadow:0 8px 18px rgba(255,65,108,.18)}.secondary-btn{background:#202533;color:#fff}.wide{width:100%;margin-top:11px}.selected{text-align:center;font-size:11px;color:#28a66a;font-weight:900;padding:8px}.message{text-align:center;font-size:11px;color:#6c7180;min-height:15px}.result-card h3{margin:3px 0 12px}.result-row{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid #f0f0f4;font-size:12px}.result-row:last-child{border-bottom:0}.res-badge{padding:5px 10px;border-radius:20px;background:#ececf2}.bottom-nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(520px,100%);height:70px;background:rgba(255,255,255,.97);border-top:1px solid #ececf2;display:grid;grid-template-columns:repeat(6,1fr);z-index:30;padding-bottom:env(safe-area-inset-bottom)}.nav-item{border:0;background:none;color:#9da1ad;font-size:10px;font-weight:800;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}.nav-item span{font-size:20px;line-height:18px}.nav-item.active{color:#ff416c}.nav-item.play span{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#ff416c,#ff704d);color:#fff;display:grid;place-items:center;box-shadow:0 7px 18px rgba(255,65,108,.25);margin-top:-18px;border:4px solid #f5f6fa}.page-title{padding:13px 3px 15px}.page-title h1{font-size:25px}.page-title p{margin:4px 0;color:#8b8e9a;font-size:12px}.info-list{padding:4px 17px}.info-list div{display:flex;justify-content:space-between;padding:15px 0;border-bottom:1px solid #f0f0f4;font-size:12px}.info-list div:last-child{border:0}.info-list span{color:#8e919d}.empty-card{text-align:center;padding:45px 22px}.empty-card div{font-size:35px}.empty-card p{color:#8b8e9a;font-size:12px}.profile-card{text-align:center;padding:28px}.profile-avatar{margin:0 auto 12px}.profile-card p{color:#8b8e9a;font-size:12px}.modal-overlay,.modal{position:fixed;inset:0;background:rgba(18,20,28,.62);z-index:50;display:none;align-items:flex-end;justify-content:center;padding:12px}.modal-content,.auth-card,.popup-card{background:#fff;border-radius:24px;padding:22px;width:min(470px,100%);position:relative;box-shadow:0 20px 50px rgba(0,0,0,.22)}.modal-content{max-height:calc(100vh - 24px);overflow-y:auto;-webkit-overflow-scrolling:touch}.auth-card{max-width:390px;align-self:center}.modal-overlay#auth-modal{display:flex}.auth-card{text-align:center}.brand-mark{margin:0 auto 10px}.auth-card h2{font-size:22px}.auth-card p{font-size:11px;color:#8b8e9a}.auth-card .input-group{text-align:left}.switch-copy{margin-top:14px}.link-btn{border:0;background:none;color:#ff416c;font-weight:900}.auth-note{font-size:9px;color:#a2a5b0}.close-btn{position:absolute;right:14px;top:10px;border:0;background:#f3f4f7;border-radius:50%;width:32px;height:32px;font-size:20px}.helper{font-size:11px;color:#8b8e9a}.qr-payment-box{background:#fff;border:1px solid #ececf2;border-radius:16px;padding:14px;text-align:center;margin:12px 0}.qr-title{font-size:11px;font-weight:900;color:#202533;letter-spacing:.8px;margin-bottom:10px}.payment-qr{display:block;width:190px;height:190px;object-fit:contain;margin:0 auto;border-radius:8px;background:#fff}.qr-help{font-size:10px;color:#8b8e9a;margin-top:9px}.upi-box{background:#fff3f6;color:#ef4268;border-radius:12px;padding:12px;margin:10px 0;font-size:10px;display:flex;justify-content:space-between}.modal h3{margin:3px 0}.popup-card{text-align:center;max-width:320px;align-self:center}.popup-title{font-size:20px;font-weight:900}.popup-msg{font-size:12px;color:#777;margin:7px 0}.popup-icon{font-size:42px}.modal{display:none;align-items:center}.modal[style*="flex"],.modal.show{display:flex}
+@media(min-width:700px){body{background:#e9eaf0}.app-shell{box-shadow:0 0 50px rgba(0,0,0,.08)}}
+.history-tabs{display:flex;gap:8px;margin:16px 0}.history-tab{flex:1;border:1px solid #e4e5ec;background:#fff;border-radius:12px;padding:10px 6px;font-weight:800;color:#555}.history-tab.active{background:#1f2430;color:#fff}.history-list{display:grid;gap:10px}.history-card{background:#fff;border:1px solid #ececf2;border-radius:16px;padding:14px;display:flex;align-items:center;justify-content:space-between}.history-left{display:flex;gap:11px;align-items:center}.history-icon{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:#f2f3f7;font-size:20px}.history-title{font-weight:900}.history-date{font-size:12px;color:#888;margin-top:3px}.history-right{text-align:right}.history-amount{font-weight:900;font-size:16px}.status{font-size:11px;font-weight:900;margin-top:4px;text-transform:uppercase}.status.approved{color:#16803a}.status.pending{color:#d98200}.status.rejected{color:#c62828}.history-empty{background:#fff;border-radius:16px;padding:28px 18px;text-align:center;color:#777}</style></head>
+<body>
+  <div id="outcome-popup" class="modal-overlay">
+    <div class="popup-card">
+      <div id="popup-icon" class="popup-icon">🎉</div>
+      <div id="popup-title" class="popup-title">YOU WON!</div>
+      <div id="popup-text" class="popup-msg">Aapne round jeet liya hai!</div>
+      <button class="primary-btn" onclick="closeOutcomePopup()">OK</button>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="auth-modal">
+    <div class="auth-card">
+      <div class="brand-mark">CX</div>
+      <h2 id="auth-title">Compare_X Rank</h2>
+      <p id="auth-subtitle">Login to your account</p>
+      <div class="input-group" id="name-group">
+        <label>Full Name</label>
+        <input id="auth-name" placeholder="Enter your name" type="text">
+      </div>
+      <div class="input-group">
+        <label>Mobile Number</label>
+        <input id="auth-mobile" inputmode="numeric" placeholder="10 digit mobile number" type="text">
+      </div>
+      <div class="input-group">
+        <label>Password</label>
+        <input id="auth-password" placeholder="Enter password" type="password">
+      </div>
+      <button class="primary-btn wide" onclick="handleAuthSubmit()">CONTINUE</button>
+      <p class="switch-copy"><span id="auth-toggle-msg">Don't have an account?</span>
+        <button class="link-btn" id="auth-toggle-btn" onclick="toggleAuthMode()">Register</button>
+      </p>
+      <div id="auth-note">Secure login • No SMS OTP required</div>
+    </div>
+  </div>
+
+  <div class="modal" id="deposit-modal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal('deposit-modal')">×</button>
+      <div class="section-kicker">WALLET</div>
+      <h3>Add Money</h3>
+      <p class="helper">Pay using your UPI app, then submit the UTR for review.</p>
+      <div class="qr-payment-box">
+        <div class="qr-title">SCAN & PAY</div>
+        <img class="payment-qr" src="payment-qr.jpeg" alt="UPI Payment QR Code" loading="eager">
+        <div class="qr-help">Open any UPI app and scan this QR code</div>
+      </div>
+      <div class="upi-box"><span>UPI ID</span><strong>comparex@axl</strong></div>
+      <div class="input-group"><label>Deposit Amount (₹)</label><input id="dep-amount" min="100" type="number" value="500"></div>
+      <button class="primary-btn wide" onclick="payViaUPI()" type="button">PAY VIA UPI</button>
+      <div class="input-group"><label>UPI Transaction / UTR ID</label><input id="dep-utr" placeholder="Enter UTR number" type="text"></div>
+      <button class="secondary-btn wide" onclick="submitDeposit()">SUBMIT DEPOSIT</button>
+    </div>
+  </div>
+
+  <div class="modal" id="withdraw-modal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal('withdraw-modal')">×</button>
+      <div class="section-kicker">WALLET</div>
+      <h3>Withdraw Money</h3>
+      <div class="input-group"><label>Withdraw Amount (₹)</label><input id="wd-amount" min="110" type="number" value="200"></div>
+      <div class="input-group"><label>UPI ID</label><input id="wd-upi" placeholder="name@upi" type="text"></div>
+      <button class="primary-btn wide" onclick="submitWithdraw()">WITHDRAW NOW</button>
+    </div>
+  </div>
+
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo">CX</div>
+        <div><strong>Compare_X</strong><small>RANK</small></div>
+      </div>
+      <button class="music-pill" id="music-btn" onclick="toggleBGM()">▶ Music</button>
+    </header>
+
+    <main>
+      <section id="home-page" class="page active-page">
+        <div class="hero-card">
+          <div>
+            <span class="eyebrow">WELCOME BACK</span>
+            <h1>Play. Compare. Rank.</h1>
+            <p>Fast rounds with a clean, mobile-first experience.</p>
+          </div>
+          <div class="hero-badge">⚡ LIVE</div>
+        </div>
+
+        <div class="wallet-card">
+          <div class="wallet-top"><span>Available Balance</span><span id="music-status">🎵 BGM: Paused</span></div>
+          <div class="balance">₹<span id="balance">0</span></div>
+          <div class="user-mini"><span id="user-name">--</span><span id="user-id">--</span></div>
+          <div class="wallet-actions">
+            <button class="wallet-btn add" onclick="openModal('deposit-modal')">＋ Add Money</button>
+            <button class="wallet-btn withdraw" onclick="openModal('withdraw-modal')">↗ Withdraw</button>
+          </div>
+        </div>
+
+        <div class="section-head"><div><span class="section-kicker">LIVE ROUND</span><h2>Choose your pick</h2></div><div class="timer-chip"><span id="countdown">--</span>s</div></div>
+        <div class="game-card">
+          <div class="round-title"><span>Current Round</span><span class="live-dot">● LIVE</span></div>
+          <div class="choice-label">Select Color <span>2×</span></div>
+          <div class="color-grid">
+            <button class="color-choice green" onclick="setChoice('COLOR','GREEN')">Green</button>
+            <button class="color-choice red" onclick="setChoice('COLOR','RED')">Red</button>
+            <button class="color-choice violet" onclick="setChoice('COLOR','VIOLET')">Violet</button>
+          </div>
+          <div class="choice-label">Or select a number <span>9×</span></div>
+          <div class="number-grid">
+            <button class="num-btn n0" onclick="setChoice('NUMBER',0)">0</button><button class="num-btn n1" onclick="setChoice('NUMBER',1)">1</button>
+            <button class="num-btn n2" onclick="setChoice('NUMBER',2)">2</button><button class="num-btn n3" onclick="setChoice('NUMBER',3)">3</button>
+            <button class="num-btn n4" onclick="setChoice('NUMBER',4)">4</button><button class="num-btn n5" onclick="setChoice('NUMBER',5)">5</button>
+            <button class="num-btn n6" onclick="setChoice('NUMBER',6)">6</button><button class="num-btn n7" onclick="setChoice('NUMBER',7)">7</button>
+            <button class="num-btn n8" onclick="setChoice('NUMBER',8)">8</button><button class="num-btn n9" onclick="setChoice('NUMBER',9)">9</button>
+          </div>
+          <div class="input-group amount-group"><label>Enter Amount (₹)</label><input id="bet-amount" min="10" step="10" type="number" value="10"></div>
+          <div id="selected-info" class="selected">Selected: None</div>
+          <button class="primary-btn wide" onclick="placeBet()">PLACE BET</button>
+          <p id="msg" class="message"></p>
+        </div>
+
+        <div class="result-card">
+          <div class="section-kicker">RESULT</div>
+          <h3>Latest Round</h3>
+          <div class="result-row"><span>Winning Color</span><b class="res-badge" id="res-color">--</b></div>
+          <div class="result-row"><span>Winning Number</span><b id="res-number" class="winning-number">--</b></div>
+        </div>
+      </section>
+
+      <section id="wallet-page" class="page">
+        <div class="page-title"><span class="section-kicker">MY WALLET</span><h1>Wallet</h1><p>Manage your balance and requests.</p></div>
+        <div class="wallet-card large"><span>Current Balance</span><div class="balance">₹<span id="wallet-balance-copy">0</span></div>
+          <div class="wallet-actions"><button class="wallet-btn add" onclick="openModal('deposit-modal')">＋ Deposit</button><button class="wallet-btn withdraw" onclick="openModal('withdraw-modal')">↗ Withdraw</button></div>
+        <button class="primary-btn wide" onclick="openSupport()">💬 Customer Support</button>
+        </div>
+        <div class="info-list"><div><span>Account</span><strong id="wallet-user">--</strong></div><div><span>Mobile</span><strong id="wallet-mobile">--</strong></div></div>
+      </section>
+
+      <section id="activity-page" class="page">
+        <div class="page-title"><span class="section-kicker">ACCOUNT</span><h1>Activity</h1><p>Your account activity area.</p></div>
+        <div class="history-tabs"><button class="history-tab active" onclick="showHistory('all',this)">All</button><button class="history-tab" onclick="showHistory('deposit',this)">Add Money</button><button class="history-tab" onclick="showHistory('withdrawal',this)">Withdrawals</button></div><div id="history-list" class="history-list"><div class="empty-card"><div>🧾</div><h3>Loading history...</h3><p>Your transactions will appear here.</p></div></div>
+      </section>
+
+      <section id="profile-page" class="page">
+        <div class="page-title"><span class="section-kicker">ACCOUNT</span><h1>Profile</h1><p>Your account details.</p></div>
+        <div class="profile-card"><div class="profile-avatar">CX</div><h2 id="profile-name">--</h2><p id="profile-mobile">--</p><button class="secondary-btn wide" onclick="localStorage.removeItem('gameUser'); location.reload()">LOG OUT</button></div>
+      </section>
+    </main>
+
+    <nav class="bottom-nav">
+      <button class="nav-item active" data-page="home-page" onclick="showPage('home-page',this)"><span>⌂</span><small>Home</small></button>
+      <button class="nav-item" data-page="wallet-page" onclick="showPage('wallet-page',this)"><span>◈</span><small>Wallet</small></button>
+      <button class="nav-item play" data-page="home-page" onclick="showPage('home-page',this)"><span>▶</span><small>Play</small></button>
+      <button class="nav-item" data-page="activity-page" onclick="showPage('activity-page',this)"><span>▣</span><small>Activity</small></button>
+      <button class="nav-item" onclick="openSupport()"><span>💬</span><small>Support</small></button>
+      <button class="nav-item" data-page="profile-page" onclick="showPage('profile-page',this)"><span>●</span><small>Profile</small></button>
+    </nav>
+  </div>
+
+  <script src="config.js"></script>
+  <script>
+    function showPage(id, el) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active-page'));
+      const page = document.getElementById(id);
+      if (page) page.classList.add('active-page');
+      document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+      if (el) el.classList.add('active');
+      if (id === 'wallet-page' && document.getElementById('wallet-balance-copy')) document.getElementById('wallet-balance-copy').innerText = document.getElementById('balance').innerText;
+      if (id === 'profile-page' && window.currentUser) {
+        document.getElementById('profile-name').innerText = window.currentUser.name || '--';
+        document.getElementById('profile-mobile').innerText = window.currentUser.mobile || '--';
+      }
+      if (id === 'activity-page') loadTransactionHistory();
+      window.scrollTo({top:0, behavior:'smooth'});
+    }
+    const _oldLoad = window.onload;
+  </script>
+  <script>
+
+    const BACKEND_URL = (window.GAME_API_URL || "").replace(/\/$/, "");
+
+    let currentUser = JSON.parse(localStorage.getItem("gameUser")) || null;
+    let isRegisterMode = false;
+    let currentBetType = null;
+    let currentBetValue = null;
+    
+    let activeBet = null; 
+    let lastProcessedRoundId = null;
+
+    // Sound Effects & BGM Setup using Web Audio API synthesis for guaranteed playback without external asset load failures
+    function playWinSound() {
+        try {
+            const ctx = new (window.AudioContext || window.webkitAudioContext)();
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+            osc.type = 'triangle';
+            osc.frequency.setValueAtTime(440, ctx.currentTime);
+            osc.frequency.exponentialRampToValueAtTime(880, ctx.currentTime + 0.3);
+            gain.gain.setValueAtTime(0.2, ctx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.5);
+            osc.connect(gain);
+            gain.connect(ctx.destination);
+            osc.start();
+            osc.stop(ctx.currentTime + 0.5);
+        } catch(e) {}
+    }
+
+    function playLoseSound() {
+        try {
+            const ctx = new (window.AudioContext || window.webkitAudioContext)();
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+            osc.type = 'sawtooth';
+            osc.frequency.setValueAtTime(300, ctx.currentTime);
+            osc.frequency.exponentialRampToValueAtTime(120, ctx.currentTime + 0.4);
+            gain.gain.setValueAtTime(0.2, ctx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.5);
+            osc.connect(gain);
+            gain.connect(ctx.destination);
+            osc.start();
+            osc.stop(ctx.currentTime + 0.5);
+        } catch(e) {}
+    }
+
+    let audioCtx = null;
+    let isMusicPlaying = false;
+    let musicInterval = null;
+
+    function toggleBGM() {
+        if (!isMusicPlaying) {
+            startBGM();
+        } else {
+            stopBGM();
+        }
+    }
+
+    function startBGM() {
+        if (isMusicPlaying) return;
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        isMusicPlaying = true;
+        document.getElementById("music-status").innerText = "🎵 BGM: Playing";
+        document.getElementById("music-btn").innerText = "Pause Music";
+
+        const notes = [261.63, 329.63, 392.00, 523.25]; // C E G C
+        let index = 0;
+
+        function playTone() {
+            if (!isMusicPlaying || !audioCtx) return;
+            try {
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+
+                osc.type = 'triangle';
+                osc.frequency.setValueAtTime(notes[index], audioCtx.currentTime);
+
+                gain.gain.setValueAtTime(0.05, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+
+                osc.start();
+                osc.stop(audioCtx.currentTime + 0.4);
+
+                index = (index + 1) % notes.length;
+            } catch (e) {}
+        }
+
+        musicInterval = setInterval(playTone, 350);
+    }
+
+    function stopBGM() {
+        isMusicPlaying = false;
+        if (musicInterval) clearInterval(musicInterval);
+        if (audioCtx) audioCtx.close();
+        document.getElementById("music-status").innerText = "🎵 BGM: Paused";
+        document.getElementById("music-btn").innerText = "Play Music";
+    }
+
+    window.addEventListener('click', () => {
+        if (!isMusicPlaying) {
+            startBGM();
+        }
+    }, { once: true });
+
+    window.onload = () => {
+        if (currentUser) {
+            document.getElementById("auth-modal").style.display = "none";
+            loadUserData();
+        }
+    };
+
+    function toggleAuthMode() {
+        isRegisterMode = !isRegisterMode;
+        document.getElementById("auth-title").innerText = isRegisterMode ? "Register" : "Login";
+        document.getElementById("name-group").style.display = isRegisterMode ? "block" : "none";
+        document.getElementById("auth-toggle-msg").innerText = isRegisterMode ? "Already have an account?" : "Don't have an account?";
+        document.getElementById("auth-toggle-btn").innerText = isRegisterMode ? "Login" : "Register";
+    }
+
+    async function handleAuthSubmit() {
+        const mobile = document.getElementById("auth-mobile").value;
+        const password = document.getElementById("auth-password").value;
+        const name = document.getElementById("auth-name").value;
+        if (!mobile || !password) return alert("Mobile and password required!");
+        
+        const endpoint = isRegisterMode ? "/api/register" : "/api/login";
+        const payload = isRegisterMode ? { name, mobile, password } : { mobile, password };
+        
+        try {
+            const res = await fetch(`${BACKEND_URL}${endpoint}`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(payload)
+            });
+            const data = await res.json();
+            if (data.success) {
+                currentUser = data.user;
+                localStorage.setItem("gameUser", JSON.stringify(currentUser));
+                document.getElementById("auth-modal").style.display = "none";
+                loadUserData();
+                alert(data.message);
+            } else {
+                alert(data.message);
+            }
+        } catch(err) {
+            alert("Error connecting to server!");
+        }
+    }
+
+    function loadUserData() {
+        if(!currentUser) return;
+        document.getElementById("user-name").innerText = currentUser.name;
+        document.getElementById("user-id").innerText = currentUser.mobile;
+        fetchBalance();
+    }
+
+    function openModal(id) { document.getElementById(id).style.display = "flex"; }
+    function closeModal(id) { document.getElementById(id).style.display = "none"; }
+
+    function showOutcomePopup(isWin, title, text) {
+        const popup = document.getElementById("outcome-popup");
+        const popupIcon = document.getElementById("popup-icon");
+        const popupTitle = document.getElementById("popup-title");
+        const popupText = document.getElementById("popup-text");
+
+        if (isWin) {
+            popupIcon.innerText = "🎉";
+            popupTitle.innerText = title;
+            popupTitle.style.color = "#28a745";
+            playWinSound();
+        } else {
+            popupIcon.innerText = "❌";
+            popupTitle.innerText = title;
+            popupTitle.style.color = "#dc3545";
+            playLoseSound();
+        }
+        popupText.innerText = text;
+        popup.style.display = "flex";
+    }
+
+    function closeOutcomePopup() {
+        document.getElementById("outcome-popup").style.display = "none";
+    }
+
+    function payViaUPI() {
+        const amount = Number(document.getElementById("dep-amount").value);
+        if (!amount || amount < 100) return alert("Minimum Deposit is ₹100!");
+        const upiUrl = `upi://pay?pa=comparex@axl&pn=Compare%20X&am=${encodeURIComponent(amount)}&cu=INR`;
+        window.location.href = upiUrl;
+    }
+
+    async function submitDeposit() {
+        const amount = document.getElementById("dep-amount").value;
+        const utrNumber = document.getElementById("dep-utr").value;
+        if(!utrNumber) return alert("Please enter UTR Transaction Number!");
+        
+        try {
+            const res = await fetch(`${BACKEND_URL}/api/add-money`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ userId: currentUser.mobile, amount, utrNumber })
+            });
+            const data = await res.json();
+            alert(data.message);
+            if(data.success) {
+                closeModal('deposit-modal');
+                // Balance intentionally does NOT increase here. It changes only after admin approval.
+                fetchBalance();
+                loadTransactionHistory();
+            }
+        } catch(err) { alert("Deposit failed!"); }
+    }
+
+    async function submitWithdraw() {
+        const amount = document.getElementById("wd-amount").value;
+        const upiId = document.getElementById("wd-upi").value;
+        if(!upiId) return alert("Please enter your UPI ID!");
+        
+        try {
+            const res = await fetch(`${BACKEND_URL}/api/withdraw`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ userId: currentUser.mobile, amount, upiId })
+            });
+            const data = await res.json();
+            alert(data.message);
+            if(data.success) {
+                closeModal('withdraw-modal');
+                fetchBalance();
+                loadTransactionHistory();
+            }
+        } catch(err) { alert("Withdrawal request failed!"); }
+    }
+
+    function setChoice(type, value) {
+        currentBetType = type;
+        currentBetValue = value;
+        document.getElementById("selected-info").innerText = `Selected: ${type} -> ${value}`;
+    }
+
+    setInterval(async () => {
+        try {
+            const res = await fetch(`${BACKEND_URL}/api/game-status`);
+            const data = await res.json();
+             
+            document.getElementById("countdown").innerText = data.timeLeft;
+             
+            if (data.lastWinningColor && data.lastWinningNumber !== null) {
+                const colorBadge = document.getElementById("res-color");
+                colorBadge.innerText = data.lastWinningColor;
+                 
+                if (data.lastWinningColor === "GREEN") colorBadge.style.backgroundColor = "#28a745";
+                else if (data.lastWinningColor === "RED") colorBadge.style.backgroundColor = "#dc3545";
+                else if (data.lastWinningColor === "VIOLET") colorBadge.style.backgroundColor = "#6f42c1";
+                
+                const winningNumberEl = document.getElementById("res-number");
+                const winningNumber = Number(data.lastWinningNumber);
+                winningNumberEl.innerText = data.lastWinningNumber;
+                winningNumberEl.className = "winning-number " + ((winningNumber === 0 || winningNumber === 5) ? "violet-number" : (winningNumber % 2 === 0 ? "red-number" : "green-number"));
+
+                if (activeBet && data.roundId !== lastProcessedRoundId) {
+                    lastProcessedRoundId = data.roundId;
+
+                    let isWin = false;
+                    if (activeBet.betType === "COLOR" && activeBet.betValue === data.lastWinningColor) {
+                        isWin = true;
+                    } else if (activeBet.betType === "NUMBER" && parseInt(activeBet.betValue) === data.lastWinningNumber) {
+                        isWin = true;
+                    }
+
+                    if (isWin) {
+                        showOutcomePopup(true, "YOU WON!", `Congratulations! Winning Color: ${data.lastWinningColor}, Number: ${data.lastWinningNumber}`);
+                        document.getElementById("msg").innerHTML = "<span style='color:green; font-weight:bold;'>🎉 Congratulations! You Won the Bet!</span>";
+                    } else {
+                        showOutcomePopup(false, "YOU LOST", `Oops! Winning Color was ${data.lastWinningColor} and Number ${data.lastWinningNumber}. Try again!`);
+                        document.getElementById("msg").innerHTML = "<span style='color:red; font-weight:bold;'>❌ Oops! You Lost this round. Try Again!</span>";
+                    }
+
+                    activeBet = null;
+                }
+            }
+
+            if (currentUser) fetchBalance();
+        } catch (err) {}
+    }, 1000);
+
+
+    let transactionHistory = [];
+    let historyFilter = 'all';
+    function formatHistoryDate(v){try{return new Date(v).toLocaleString('en-IN',{day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'});}catch(e){return v||'';}}
+    function showHistory(filter,el){historyFilter=filter;document.querySelectorAll('.history-tab').forEach(b=>b.classList.remove('active'));if(el)el.classList.add('active');renderHistory();}
+    function renderHistory(){const box=document.getElementById('history-list');if(!box)return;const rows=transactionHistory.filter(x=>historyFilter==='all'||x.type===historyFilter).sort((a,b)=>new Date(b.created_at)-new Date(a.created_at));if(!rows.length){box.innerHTML='<div class="history-empty">🧾<br><b>No transactions yet</b><br><small>Your Add Money and Withdrawal history will appear here.</small></div>';return;}box.innerHTML=rows.map(x=>{const d=x.type==='deposit',st=String(x.status||'').toLowerCase();return `<div class="history-card"><div class="history-left"><div class="history-icon">${d?'＋':'↗'}</div><div><div class="history-title">${d?'Add Money':'Withdrawal'}</div><div class="history-date">${formatHistoryDate(x.created_at)}${d&&x.utr_number?' · UTR '+x.utr_number:''}</div></div></div><div class="history-right"><div class="history-amount">${d?'+':'−'}₹${Number(x.amount).toFixed(2)}</div><div class="status ${st}">${x.status||'PENDING'}</div></div></div>`;}).join('');}
+    async function loadTransactionHistory(){if(!currentUser)return;try{const [d,w]=await Promise.all([fetch(`${BACKEND_URL}/api/user/${encodeURIComponent(currentUser.mobile)}/deposits`),fetch(`${BACKEND_URL}/api/user/${encodeURIComponent(currentUser.mobile)}/withdrawals`)]);const dd=await d.json(),ww=await w.json();transactionHistory=[...(dd.deposits||[]).map(x=>({...x,type:'deposit'})),...(ww.withdrawals||[]).map(x=>({...x,type:'withdrawal'}))];renderHistory();}catch(e){const box=document.getElementById('history-list');if(box)box.innerHTML='<div class="history-empty">History load nahi ho saki. Please try again.</div>';}}
+    async function fetchBalance() {
+        if (!currentUser) return;
+        try {
+            const res = await fetch(`${BACKEND_URL}/api/user/${currentUser.mobile}`);
+            const data = await res.json();
+            if(data.success) {
+                document.getElementById("balance").innerText = data.balance;
+            }
+        } catch(err) {}
+    }
+
+    async function placeBet() {
+        if (!currentUser) return alert("Please login first!");
+        const amount = parseInt(document.getElementById("bet-amount").value);
+         
+        if(!currentBetType || currentBetValue === null) {
+            alert("Pehle koi Color ya Number select karein!");
+            return;
+        }
+        if(!amount || amount < 10) {
+            alert("Minimum Bet Amount ₹10 honi chahiye!");
+            return;
+        }
+
+        try {
+            const statusRes = await fetch(`${BACKEND_URL}/api/game-status`);
+            const statusData = await statusRes.json();
+
+            const res = await fetch(`${BACKEND_URL}/api/place-bet`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ 
+                    userId: currentUser.mobile, 
+                    betType: currentBetType,
+                    betValue: currentBetValue, 
+                    amount: amount 
+                })
+            });
+            const data = await res.json();
+            document.getElementById("msg").innerText = data.message;
+            
+            if(data.success) {
+                activeBet = {
+                    betType: currentBetType,
+                    betValue: currentBetValue,
+                    amount: amount
+                };
+                lastProcessedRoundId = statusData.roundId;
+
+                // Show an immediate confirmation on the player's mobile screen.
+                const betLabel = currentBetType === "COLOR" ? currentBetValue : `Number ${currentBetValue}`;
+                showOutcomePopup(true, "BET PLACED!", `₹${amount} ka ${betLabel} bet successfully lag gaya hai.`);
+            }
+
+            fetchBalance();
+        } catch(err) {
+            document.getElementById("msg").innerText = "Bet place karne me error aaya!";
+        }
+    }
+
+  </script>
+  <script>
+    // Keep UI mirrors synchronized with the existing game logic.
+    window.setInterval(() => {
+      const b = document.getElementById('balance');
+      if (b) {
+        const v = b.innerText;
+        ['wallet-balance-copy'].forEach(id => { const el=document.getElementById(id); if(el) el.innerText=v; });
+      }
+      const n=document.getElementById('user-name')?.innerText || '--';
+      const m=document.getElementById('user-id')?.innerText || '--';
+      if(document.getElementById('wallet-user')) document.getElementById('wallet-user').innerText=n;
+      if(document.getElementById('wallet-mobile')) document.getElementById('wallet-mobile').innerText=m;
+      if(window.currentUser) {
+        document.getElementById('profile-name').innerText=window.currentUser.name||'--';
+        document.getElementById('profile-mobile').innerText=window.currentUser.mobile||'--';
+      }
+    }, 500);
+  
+    function openSupport(){
+      window.open('https://t.me/Co_X85','_blank','noopener,noreferrer');
+    }
+</script>
+</body>
+</html>
